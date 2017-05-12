@@ -1,6 +1,6 @@
 {
   "name": "node-psql",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Wrapper for a psql shell invocation",
   "repository": {
     "type": "git",

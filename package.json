@@ -1,0 +1,18 @@
+{
+  "name": "node-psql",
+  "version": "0.0.1",
+  "description": "Wrapper for a psql shell invocation",
+  "repository": "maslennikov/node-psql",
+  "author": "Alexey Maslennikov <alexey@maslennikov.me>",
+  "keywords": [
+    "postgresql",
+    "psql"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maslennikov/node-psql.git"
+  }
+}

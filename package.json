@@ -2,7 +2,10 @@
   "name": "node-psql",
   "version": "0.0.1",
   "description": "Wrapper for a psql shell invocation",
-  "repository": "maslennikov/node-psql",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maslennikov/node-psql.git"
+  },
   "author": "Alexey Maslennikov <alexey@maslennikov.me>",
   "keywords": [
     "postgresql",
@@ -10,9 +13,11 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maslennikov/node-psql.git"
+  "scripts": {
+    "release": "run np"
+  },
+  "devDependencies": {
+    "cross-run": "^1.0.1",
+    "np": "^2.14.1"
   }
 }

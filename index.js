@@ -2,8 +2,7 @@ const spawn = require('child_process').spawn;
 
 
 module.exports = function(options={}) {
-  if (!options.database) throw new Error('No database provided')
-
+  // having implemented only this command
   return fromFile(options)
 }
 
@@ -14,6 +13,8 @@ function fromFile(options) {
 }
 
 function run(options, args=[]) {
+  if (!options.database) throw new Error('No database provided')
+
   return new Promise((ok, nok) => {
     const psql = spawn('psql', args.concat(options.database))
     psql.stdout.on('data', data => console.log(data.toString()));
